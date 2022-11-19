@@ -10,13 +10,12 @@ import UIKit
 private let reuseIdentifier = "Superhero cell"
 
 class SuperheroesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
     var superheroes: [Superhero] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.collectionView!.register(UINib(nibName: "SuperheroCollectionViewCell", bundle: nil),
+        self.collectionView!.register(UINib (nibName: "SuperheroCollectionViewCell", bundle: nil),
                                       forCellWithReuseIdentifier: reuseIdentifier)
         
         superheroes = [
@@ -61,8 +60,8 @@ class SuperheroesViewController: UICollectionViewController, UICollectionViewDel
         
     }
     
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath:IndexPath) -> CGSize {
-         let width = collectionView.frame.width / 3
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+         let width = collectionView.frame.width / 3.5
          let height =
             (collectionView.frame.width > collectionView.frame.height)
          ? collectionView.frame.height
@@ -81,16 +80,17 @@ class SuperheroesViewController: UICollectionViewController, UICollectionViewDel
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return superheroes.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                       for: indexPath) as! SuperheroCollectionViewCell
-    
-        cell.textLabel.text = superheroes[indexPath.row].name
-        cell.imageView.image = superheroes[indexPath.row].image
+        
+        //cell.textLabel.text = superheroes[indexPath.row].name
+        //cell.textLabel.text = superheroes[indexPath.row].name
+        //cell.imageView.image = superheroes[indexPath.row].image
+        
     
         return cell
     }

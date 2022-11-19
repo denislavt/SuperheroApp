@@ -14,8 +14,8 @@
 		BD1BC0262927FA9D0086F929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC0242927FA9D0086F929 /* LaunchScreen.storyboard */; };
 		BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC0322927FEFC0086F929 /* SuperheroesViewController.swift */; };
 		BD1BC035292800A20086F929 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC034292800A20086F929 /* Superhero.swift */; };
-		BD1BC0382928021E0086F929 /* SuperheroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC0362928021E0086F929 /* SuperheroCollectionViewCell.swift */; };
-		BD1BC0392928021E0086F929 /* SuperheroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC0372928021E0086F929 /* SuperheroCollectionViewCell.xib */; };
+		BD1BC03C292925320086F929 /* SuperheroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */; };
+		BD1BC03D292925320086F929 /* SuperheroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		BD1BC0272927FA9D0086F929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1BC0322927FEFC0086F929 /* SuperheroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroesViewController.swift; path = ViewControllers/SuperheroesViewController.swift; sourceTree = "<group>"; };
 		BD1BC034292800A20086F929 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Superhero.swift; path = Models/Superhero.swift; sourceTree = "<group>"; };
-		BD1BC0362928021E0086F929 /* SuperheroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroCollectionViewCell.swift; path = Views/SuperheroCollectionViewCell.swift; sourceTree = "<group>"; };
-		BD1BC0372928021E0086F929 /* SuperheroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SuperheroCollectionViewCell.xib; path = Views/SuperheroCollectionViewCell.xib; sourceTree = "<group>"; };
+		BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperheroCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,7 @@
 		BD1BC0302927FB1C0086F929 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BD1BC0362928021E0086F929 /* SuperheroCollectionViewCell.swift */,
-				BD1BC0372928021E0086F929 /* SuperheroCollectionViewCell.xib */,
+				BD1BC03E292926A20086F929 /* SuperheroCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +113,15 @@
 				BD1BC034292800A20086F929 /* Superhero.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BD1BC03E292926A20086F929 /* SuperheroCell */ = {
+			isa = PBXGroup;
+			children = (
+				BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */,
+				BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */,
+			);
+			path = SuperheroCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1BC0392928021E0086F929 /* SuperheroCollectionViewCell.xib in Resources */,
+				BD1BC03D292925320086F929 /* SuperheroCollectionViewCell.xib in Resources */,
 				BD1BC0262927FA9D0086F929 /* LaunchScreen.storyboard in Resources */,
 				BD1BC0232927FA9D0086F929 /* Assets.xcassets in Resources */,
 				BD1BC0212927FA9B0086F929 /* Main.storyboard in Resources */,
@@ -188,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1BC0382928021E0086F929 /* SuperheroCollectionViewCell.swift in Sources */,
+				BD1BC03C292925320086F929 /* SuperheroCollectionViewCell.swift in Sources */,
 				BD1BC01A2927FA9B0086F929 /* AppDelegate.swift in Sources */,
 				BD1BC01C2927FA9B0086F929 /* SceneDelegate.swift in Sources */,
 				BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */,

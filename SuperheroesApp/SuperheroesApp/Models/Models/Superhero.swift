@@ -39,7 +39,10 @@ class Superhero  {
          name: String,
          secretIdentity: String,
          andImageUrl imgUrl: String) {
-        
+        self.id = id
+        self.name = name
+        self.secretIdentity = secretIdentity
+        self.imgUrl = imgUrl
     }
 
 }
