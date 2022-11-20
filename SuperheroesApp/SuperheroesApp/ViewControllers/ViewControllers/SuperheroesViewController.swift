@@ -11,20 +11,28 @@ private let reuseIdentifier = "Superhero cell"
 
 class SuperheroesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var superheroes: [Superhero] = []
+    
+    var loadingView: SuperheroesLoadingView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loadingView = SuperheroesLoadingView(frame: view.frame)
+        
+        
+        view.addSubview(loadingView!)
+        loadingView?.startLoading()
+        
         self.collectionView!.register(UINib (nibName: "SuperheroCollectionViewCell", bundle: nil),
                                       forCellWithReuseIdentifier: reuseIdentifier)
         
         superheroes = [
             Superhero(withName: "Batman",
                       secretIdentity: "Bruce Wayne",
-                      andImageUrl: "https://cdn.vox-cdn.com/thumbor/7QS-nanQbx4joOt7xzXFy1H4DzU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23307403/IMG_3722.jpeg"),
+                      andImageUrl: "http://images.squarespace-cdn.com/content/v1/55115e3fe4b0eb25fb9650e3/1641036150488-WTG2UPQZMELCF1QL9RP9/Batman+small+copy.jpeg"),
             Superhero(withName: "Batman",
                       secretIdentity: "Bruce Wayne",
-                      andImageUrl: "https://cdn.vox-cdn.com/thumbor/7QS-nanQbx4joOt7xzXFy1H4DzU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23307403/IMG_3722.jpeg"),
+                      andImageUrl: "http://images.squarespace-cdn.com/content/v1/55115e3fe4b0eb25fb9650e3/1641036150488-WTG2UPQZMELCF1QL9RP9/Batman+small+copy.jpeg"),
             Superhero(withName: "Batman",
                       secretIdentity: "Bruce Wayne",
                       andImageUrl: "https://cdn.vox-cdn.com/thumbor/7QS-nanQbx4joOt7xzXFy1H4DzU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23307403/IMG_3722.jpeg"),
@@ -61,7 +69,7 @@ class SuperheroesViewController: UICollectionViewController, UICollectionViewDel
     }
     
      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-         let width = collectionView.frame.width / 3.5
+         let width = collectionView.frame.width / 3.2
          let height =
             (collectionView.frame.width > collectionView.frame.height)
          ? collectionView.frame.height
@@ -90,8 +98,19 @@ class SuperheroesViewController: UICollectionViewController, UICollectionViewDel
         //cell.textLabel.text = superheroes[indexPath.row].name
         //cell.textLabel.text = superheroes[indexPath.row].name
         //cell.imageView.image = superheroes[indexPath.row].image
+//        let image: UIImage? = {
+//            let url = URL(string: superheroes[indexPath.row].imgUrl)
+//            do{
+//                let imageData = try Data(contentsOf: url!)
+//                return UIImage(data: imageData)!
+//            } catch let err as NSError {
+//                print(err.userInfo)
+//                return nil
+//            }
+//        }() //lamda funkciq koqto izpylnqvam samo vednyj
         
-    
+        //cell.imageView.image = image!
+        
         return cell
     }
 

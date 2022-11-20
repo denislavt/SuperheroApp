@@ -16,6 +16,7 @@
 		BD1BC035292800A20086F929 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC034292800A20086F929 /* Superhero.swift */; };
 		BD1BC03C292925320086F929 /* SuperheroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */; };
 		BD1BC03D292925320086F929 /* SuperheroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */; };
+		BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BD1BC034292800A20086F929 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Superhero.swift; path = Models/Superhero.swift; sourceTree = "<group>"; };
 		BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperheroCollectionViewCell.xib; sourceTree = "<group>"; };
+		BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1BC03E292926A20086F929 /* SuperheroCell */,
+				BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				BD1BC01C2927FA9B0086F929 /* SceneDelegate.swift in Sources */,
 				BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */,
 				BD1BC035292800A20086F929 /* Superhero.swift in Sources */,
+				BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

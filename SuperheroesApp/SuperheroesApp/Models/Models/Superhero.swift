@@ -14,18 +14,7 @@ class Superhero  {
     
     var image: UIImage?
     
-    var imgUrl: String! {
-        willSet(imgUrl){
-            let url = URL(string: imgUrl)!
-            do{
-                let imageData = try Data(contentsOf: url)
-                image =  UIImage(data: imageData)
-            } catch let err as NSError {
-                print(err.userInfo)
-            }
-        }
-        
-    }
+    var imgUrl: String!
     
     convenience init(withName name: String,
                      secretIdentity: String,
