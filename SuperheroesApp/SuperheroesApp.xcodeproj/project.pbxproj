@@ -18,10 +18,10 @@
 		BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */; };
 		BD7B7168292AF8D300F28192 /* SuperheroDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B7167292AF8D300F28192 /* SuperheroDict.swift */; };
 		BD7B716A292AF8FB00F28192 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B7169292AF8FB00F28192 /* Superhero.swift */; };
+		BD7B716C292AFA8F00F28192 /* SuperheroesDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B716B292AFA8F00F28192 /* SuperheroesDataDelegate.swift */; };
+		BD7B716E292AFAC700F28192 /* SuoerheroesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B716D292AFAC700F28192 /* SuoerheroesData.swift */; };
 		BD9496DB292AF43C00252CB9 /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DA292AF43C00252CB9 /* HttpRequester.swift */; };
 		BD9496DD292AF45700252CB9 /* HttpRequesterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DC292AF45700252CB9 /* HttpRequesterDelegate.swift */; };
-		BD9496DF292AF5B500252CB9 /* SuperHeroesDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DE292AF5B500252CB9 /* SuperHeroesDataDelegate.swift */; };
-		BD9496E1292AF5EA00252CB9 /* SuperheroesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496E0292AF5EA00252CB9 /* SuperheroesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +38,10 @@
 		BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesLoadingView.swift; sourceTree = "<group>"; };
 		BD7B7167292AF8D300F28192 /* SuperheroDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroDict.swift; path = Extentions/SuperheroDict.swift; sourceTree = "<group>"; };
 		BD7B7169292AF8FB00F28192 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
+		BD7B716B292AFA8F00F28192 /* SuperheroesDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroesDataDelegate.swift; path = Delegates/SuperheroesDataDelegate.swift; sourceTree = "<group>"; };
+		BD7B716D292AFAC700F28192 /* SuoerheroesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuoerheroesData.swift; sourceTree = "<group>"; };
 		BD9496DA292AF43C00252CB9 /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequester.swift; path = Http/HttpRequester.swift; sourceTree = "<group>"; };
 		BD9496DC292AF45700252CB9 /* HttpRequesterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequesterDelegate.swift; sourceTree = "<group>"; };
-		BD9496DE292AF5B500252CB9 /* SuperHeroesDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperHeroesDataDelegate.swift; path = Data/Delegates/SuperHeroesDataDelegate.swift; sourceTree = "<group>"; };
-		BD9496E0292AF5EA00252CB9 /* SuperheroesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroesData.swift; path = Data/SuperheroesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 		BD1BC02F2927FB0D0086F929 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BD9496DE292AF5B500252CB9 /* SuperHeroesDataDelegate.swift */,
-				BD9496E0292AF5EA00252CB9 /* SuperheroesData.swift */,
+				BD7B716B292AFA8F00F28192 /* SuperheroesDataDelegate.swift */,
+				BD7B716D292AFAC700F28192 /* SuoerheroesData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -216,14 +216,14 @@
 			files = (
 				BD1BC03C292925320086F929 /* SuperheroCollectionViewCell.swift in Sources */,
 				BD9496DD292AF45700252CB9 /* HttpRequesterDelegate.swift in Sources */,
-				BD9496DF292AF5B500252CB9 /* SuperHeroesDataDelegate.swift in Sources */,
+				BD7B716E292AFAC700F28192 /* SuoerheroesData.swift in Sources */,
 				BD1BC01A2927FA9B0086F929 /* AppDelegate.swift in Sources */,
 				BD1BC01C2927FA9B0086F929 /* SceneDelegate.swift in Sources */,
 				BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */,
 				BD9496DB292AF43C00252CB9 /* HttpRequester.swift in Sources */,
-				BD9496E1292AF5EA00252CB9 /* SuperheroesData.swift in Sources */,
 				BD7B716A292AF8FB00F28192 /* Superhero.swift in Sources */,
 				BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */,
+				BD7B716C292AFA8F00F28192 /* SuperheroesDataDelegate.swift in Sources */,
 				BD7B7168292AF8D300F28192 /* SuperheroDict.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

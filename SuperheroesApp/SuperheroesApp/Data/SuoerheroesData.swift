@@ -1,5 +1,5 @@
 //
-//  SuperheroesData.swift
+//  SuoerheroesData.swift
 //  SuperheroesApp
 //
 //  Created by Denislav Todorov on 21.11.22.
