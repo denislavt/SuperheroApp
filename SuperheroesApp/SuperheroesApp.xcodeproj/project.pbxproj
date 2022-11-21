@@ -13,10 +13,11 @@
 		BD1BC0232927FA9D0086F929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC0222927FA9D0086F929 /* Assets.xcassets */; };
 		BD1BC0262927FA9D0086F929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC0242927FA9D0086F929 /* LaunchScreen.storyboard */; };
 		BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC0322927FEFC0086F929 /* SuperheroesViewController.swift */; };
-		BD1BC035292800A20086F929 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC034292800A20086F929 /* Superhero.swift */; };
 		BD1BC03C292925320086F929 /* SuperheroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */; };
 		BD1BC03D292925320086F929 /* SuperheroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */; };
 		BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */; };
+		BD7B7168292AF8D300F28192 /* SuperheroDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B7167292AF8D300F28192 /* SuperheroDict.swift */; };
+		BD7B716A292AF8FB00F28192 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B7169292AF8FB00F28192 /* Superhero.swift */; };
 		BD9496DB292AF43C00252CB9 /* HttpRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DA292AF43C00252CB9 /* HttpRequester.swift */; };
 		BD9496DD292AF45700252CB9 /* HttpRequesterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DC292AF45700252CB9 /* HttpRequesterDelegate.swift */; };
 		BD9496DF292AF5B500252CB9 /* SuperHeroesDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9496DE292AF5B500252CB9 /* SuperHeroesDataDelegate.swift */; };
@@ -32,10 +33,11 @@
 		BD1BC0252927FA9D0086F929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1BC0272927FA9D0086F929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1BC0322927FEFC0086F929 /* SuperheroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroesViewController.swift; path = ViewControllers/SuperheroesViewController.swift; sourceTree = "<group>"; };
-		BD1BC034292800A20086F929 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Superhero.swift; path = Models/Superhero.swift; sourceTree = "<group>"; };
 		BD1BC03A292925320086F929 /* SuperheroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD1BC03B292925320086F929 /* SuperheroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperheroCollectionViewCell.xib; sourceTree = "<group>"; };
 		BD1BC041292AD15B0086F929 /* SuperheroesLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesLoadingView.swift; sourceTree = "<group>"; };
+		BD7B7167292AF8D300F28192 /* SuperheroDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperheroDict.swift; path = Extentions/SuperheroDict.swift; sourceTree = "<group>"; };
+		BD7B7169292AF8FB00F28192 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
 		BD9496DA292AF43C00252CB9 /* HttpRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequester.swift; path = Http/HttpRequester.swift; sourceTree = "<group>"; };
 		BD9496DC292AF45700252CB9 /* HttpRequesterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequesterDelegate.swift; sourceTree = "<group>"; };
 		BD9496DE292AF5B500252CB9 /* SuperHeroesDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperHeroesDataDelegate.swift; path = Data/Delegates/SuperHeroesDataDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +127,8 @@
 		BD1BC0312927FB280086F929 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BD1BC034292800A20086F929 /* Superhero.swift */,
+				BD7B7167292AF8D300F28192 /* SuperheroDict.swift */,
+				BD7B7169292AF8FB00F28192 /* Superhero.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,8 +222,9 @@
 				BD1BC0332927FEFC0086F929 /* SuperheroesViewController.swift in Sources */,
 				BD9496DB292AF43C00252CB9 /* HttpRequester.swift in Sources */,
 				BD9496E1292AF5EA00252CB9 /* SuperheroesData.swift in Sources */,
-				BD1BC035292800A20086F929 /* Superhero.swift in Sources */,
+				BD7B716A292AF8FB00F28192 /* Superhero.swift in Sources */,
 				BD1BC042292AD15B0086F929 /* SuperheroesLoadingView.swift in Sources */,
+				BD7B7168292AF8D300F28192 /* SuperheroDict.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

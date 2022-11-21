@@ -2,8 +2,9 @@
 //  Superhero.swift
 //  SuperheroesApp
 //
-//  Created by Denislav Todorov on 18.11.22.
+//  Created by Denislav Todorov on 21.11.22.
 //
+
 import UIKit
 
 class Superhero {
